@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  #############################################################################
+  ## APP
+  #############################################################################
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    restart: always
+    command: yarn run dev
+    environment:
+      NODE_ENV: development
+    volumes:
+    - ./nodemon.config.json:/opt/app/nodemon.config.json
+    - ./prettier.config.js:/opt/app/prettier.config.js
+    - ./jest.config.js:/opt/app/jest.config.js
+    - ./.eslintrc.js:/opt/app/.eslintrc.js
+    - ./src:/opt/app/src
+    - ./coverage:/opt/app/coverage
+    ports:
+      - 127.0.0.1:${APP_PORT:-3000}:3000

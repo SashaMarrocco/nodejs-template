@@ -1,0 +1,11 @@
+{
+    "verbose": false,
+    "ignore": [
+        "*.test.js",
+        ".git",
+        "logs/*",
+        "node_modules/**/node_modules"
+    ],
+    "delay": "500",
+    "signal": "SIGINT"
+}
