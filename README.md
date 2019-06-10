@@ -33,3 +33,8 @@ make tddc
 # if you need to debug, in terminal #3
 make debug
 ```
+
+# References
+
+- Node 12 API: [here](https://nodejs.org/dist/latest-v12.x/docs/api/)
+- Jest cheatsheet: [here](https://devhints.io/jest)
