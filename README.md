@@ -1,4 +1,4 @@
-# DOCKER JS TEMPLATE
+# NODEJS TEMPLATE
 
 Quick Node 12 prototyping template.
 
